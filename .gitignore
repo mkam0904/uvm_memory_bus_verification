@@ -1,0 +1,22 @@
+# Simulation outputs
+work/
+sim/work/
+transcript
+*.log
+*.vcd
+*.wlf
+*.vpd
+*.fsdb
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+conda-env/
+
+# VS Code
+.vscode/
+
+# Operating system
+.DS_Store
+Thumbs.db

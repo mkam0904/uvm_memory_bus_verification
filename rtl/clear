@@ -1,0 +1,25 @@
+
+
+
+class bus_item extends uvm_sequence_item;
+
+    // factory registration 
+    `uvm_object_utils(bus_item)
+
+    // variable declaration
+    rand bit [7:0]  addr; 
+    rand bit [31:0] wr_data;
+    rand bit        wr_flag;  
+    bit [31:0]      rd_data; 
+
+    // constructor 
+    function new (string name = "bus_item"); 
+        super.new(name);
+    endfunction
+
+    // constraints 
+    constraint four_byte_aligned {
+        addr[1:0] == 2'b00; 
+    }
+
+endclass
