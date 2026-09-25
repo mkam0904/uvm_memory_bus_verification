@@ -20,3 +20,6 @@ conda-env/
 # Operating system
 .DS_Store
 Thumbs.db
+
+# Misc
+notes
